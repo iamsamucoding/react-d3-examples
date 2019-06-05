@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c802246-b9e2-472c-b3b9-f6a88af79f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../badass-chart/.idea/badass-chart.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../badass-chart/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../badass-chart/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../badass-chart/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../badass-chart/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/simple-responsive-zoom-d3-react-bootstrap-v1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/simple-responsive-zoom-d3-react-bootstrap.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/simple-zoom-d3-react-bootstrap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/simple-zoom-d3-react-bootstrap.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,38 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -87,8 +32,8 @@
         <option value="$PROJECT_DIR$/src/Chart01.js" />
         <option value="$PROJECT_DIR$/src/Chart02.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Chart.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/Chart.js" />
       </list>
     </option>
   </component>
@@ -98,8 +43,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="718" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="730" />
+    <option name="width" value="710" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -115,6 +61,11 @@
             <path>
               <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,18 +115,17 @@
       <option name="presentableId" value="Default" />
       <updated>1559685919180</updated>
       <workItem from="1559685920429" duration="7734000" />
-      <workItem from="1559719468737" duration="708000" />
+      <workItem from="1559719468737" duration="7184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8442000" />
+    <option name="totallyTimeSpent" value="14918000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31642002" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.64411557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -208,10 +158,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ResponsiveChart.js" />
     <entry file="file://$PROJECT_DIR$/src/Chart02.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="-120">
+          <caret line="54" lean-forward="true" selection-end-line="94" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -222,13 +179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
         </state>
       </provider>
     </entry>

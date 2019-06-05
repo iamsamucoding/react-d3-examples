@@ -12,50 +12,68 @@ import Col from "react-bootstrap/Col";
 // https://bl.ocks.org/curran/3a68b0c81991e2e94b19
 
 
-const HEIGHT = 600;
 
 
 class Chart extends React.Component {
     constructor(props) {
         super(props);
         this.chartContainer = null;
-        this.svgChartContainer = null;
 
-        this.circle_radius = 200;
-
-        this.redraw = this.redraw.bind(this);
+        this.drawChart = this.drawChart.bind(this);
     }
+
 
     componentDidMount() {
-        this.redraw();
-        window.addEventListener('resize', this.redraw);
+        this.drawChart();
+        window.addEventListener('resize', this.drawChart);
     }
 
-    redraw() {
-        // The svg will have the width of the <div id="chart"> that surrounds it,
-        // and the circle radius will have 20% of it.
+
+    drawChart() {
+        // to avoid multiple appends of <svg> into the char container, we must remove it
+        d3.select(this.chartContainer).selectAll("svg").remove();
+
+        let height = 600;
+
         let width = this.chartContainer.clientWidth;
-        this.circle_radius = 0.2 * width;
+        let circleRadius = 0.15 * width;
+        let rectSide = 0.15 * width;
 
-        // since we append a <g> into the <svg> for each call, we need
-        // to remove it before rendering the viz again
-        d3.select(this.svgChartContainer).selectAll("g").remove();
-
-        // the transform must be in <g> not in <svg>, otherwise rendering
-        // becomes slower
-        let svg = d3.select(this.svgChartContainer)
+        let svg = d3.select(this.chartContainer)
+            .append("svg")
             .attr("width", width)
-            .attr("height", HEIGHT)
-            .call(d3.zoom().on("zoom", function () {
-                svg.attr("transform", d3.event.transform)
-            }))
-            .append("g");
+            .attr("height", height);
 
-        svg.append("circle")
+        let container = svg.append("g");
+
+        let circleContainer = container.append("g");
+        let circle = circleContainer.append("circle")
             .attr("cx", width / 2)
-            .attr("cy", HEIGHT / 2)
-            .attr("r", this.circle_radius)
+            .attr("cy", height / 2)
+            .attr("r", circleRadius)
             .style("fill", "#B8DEE6");
+
+        circleContainer.call(d3.zoom().on("zoom", () => {
+            circle.attr("transform", d3.event.transform);
+        }));
+
+
+        let rectContainer = container.append("g");
+        let rect = rectContainer.append("rect")
+            .attr("x", 10)
+            .attr("y", 10)
+            .attr("width", rectSide)
+            .attr("height", rectSide)
+            .attr("fill", "black");
+
+        rectContainer.call(d3.zoom().on("zoom", () => {
+            rect.attr("transform", d3.event.transform);
+        }));
+
+
+        svg.call(d3.zoom().on("zoom", () => {
+            container.attr("transform", d3.event.transform);
+        }));
     }
 
 
@@ -64,9 +82,8 @@ class Chart extends React.Component {
             <Container>
                 <Row>
                     <Col xs={12}>
-                        <div id={"chart"} className={"d-flex justify-content-center align-items-center"}
+                        <div className={"d-flex justify-content-center align-items-center"}
                              ref={divEl => this.chartContainer = divEl}>
-                            <svg id={"svg-chart"} ref={svgEl => this.svgChartContainer = svgEl}></svg>
                         </div>
                     </Col>
                 </Row>
