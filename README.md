@@ -18,5 +18,5 @@ The previous app with responsive charts. In this example, the `<circle>` radius 
 When horizontally resizing the browser's window with a width less than the container's one, it takes a new width.
 Consequently, the `<circle>` and `<rect>` are redrawn according to this new width in their resized initial position. Any previous zoom and/or drag transforms are kept in the new SVG view box/port.
 
-This example was based on [this post](https://chartio.com/resources/tutorials/how-to-resize-an-svg-when-the-window-is-resized-in-d3-js/) and [https://codepen.io/tigt/post/why-and-how-preserveaspectratio](this another one).
+This example was based on [this post](https://chartio.com/resources/tutorials/how-to-resize-an-svg-when-the-window-is-resized-in-d3-js/) and [this another one](https://codepen.io/tigt/post/why-and-how-preserveaspectratio).
 
