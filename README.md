@@ -1,6 +1,6 @@
 # Examples of React + D3.js
 
-Examples of React applications that incorporates D3 charts. All examples are based on some posts and used here as reference for my react applications. Thus, the codes are purposely over-commented in most cases.
+Examples of React applications that incorporate D3 charts. All examples are based on some posts and used here as reference for my react applications. Thus, the codes are purposely over-commented in most cases.
 
 To run any application, just clone this repository and:
 ```
