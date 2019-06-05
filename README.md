@@ -27,11 +27,17 @@ This is the most straightforward way for this integration but React doesn’t ha
 This example was also extracted from this [excellent post](https://frontendcharts.com/react-d3-integrate/).
 
 
-### 3. simple-zoom-d3-react-bootstrap
+### 3. hybrid-approach:
+A hybrid approach for integrating React and D3 in which React creates elements and D3 updates them. Now we have D3’s transitions again.
+
+This example was also extracted from this [excellent post](https://frontendcharts.com/react-d3-integrate/).
+
+
+### 4. simple-zoom-d3-react-bootstrap
 A simple react app that incorporates draggable and zoomable svg elements (a circle and a rectangle) into a bootstrap container by D3. This example was based on three posts: [first](https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js), [second](https://www.d3-graph-gallery.com/graph/interactivity_zoom.html), and [third](http://bl.ocks.org/sgruhier/1d692762f8328a2c9957).
 
 
-### 4. simple-responsive-zoom-d3-react-bootstrap
+### 5. simple-responsive-zoom-d3-react-bootstrap
 The previous app with responsive charts. In this example, the `<circle>` radius and the `<rect>` side are automatically set up according to the width of the parent `<div>` (surrounding container) of `<svg>`. They correspond to 15% of this value.
 
 When horizontally resizing the browser's window with a width less than the container's one, it takes a new width.
