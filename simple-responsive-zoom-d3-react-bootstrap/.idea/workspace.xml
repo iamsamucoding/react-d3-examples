@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c802246-b9e2-472c-b3b9-f6a88af79f88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/.idea/simple-responsive-zoom-d3-react-bootstrap-v1.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,7 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -32,8 +47,9 @@
         <option value="$PROJECT_DIR$/src/Chart01.js" />
         <option value="$PROJECT_DIR$/src/Chart02.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Chart.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/Chart.js" />
       </list>
     </option>
   </component>
@@ -60,11 +76,11 @@
           <expand>
             <path>
               <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-responsive-zoom-d3-react-bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-responsive-zoom-d3-react-bootstrap-v1" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-responsive-zoom-d3-react-bootstrap" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -116,16 +132,17 @@
       <updated>1559685919180</updated>
       <workItem from="1559685920429" duration="7734000" />
       <workItem from="1559719468737" duration="7184000" />
+      <workItem from="1559762251905" duration="1012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14918000" />
+    <option name="totallyTimeSpent" value="15930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.64411557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33051446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -149,7 +166,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
@@ -158,27 +175,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ResponsiveChart.js" />
     <entry file="file://$PROJECT_DIR$/src/Chart02.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="54" lean-forward="true" selection-end-line="94" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../simple-responsive-zoom-d3-react-bootstrap/src/Chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

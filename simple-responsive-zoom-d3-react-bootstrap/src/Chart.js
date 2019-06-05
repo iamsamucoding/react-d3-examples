@@ -10,6 +10,12 @@ import Col from "react-bootstrap/Col";
 // https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js
 // http://bl.ocks.org/sgruhier/1d692762f8328a2c9957
 // https://bl.ocks.org/curran/3a68b0c81991e2e94b19
+//
+// Responsive Charts
+// https://chartio.com/resources/tutorials/how-to-resize-an-svg-when-the-window-is-resized-in-d3-js/
+//
+// Information about preserveAspectRatio option
+// https://codepen.io/tigt/post/why-and-how-preserveaspectratio
 
 
 
@@ -18,14 +24,11 @@ class Chart extends React.Component {
     constructor(props) {
         super(props);
         this.chartContainer = null;
-
-        this.drawChart = this.drawChart.bind(this);
     }
 
 
     componentDidMount() {
         this.drawChart();
-        window.addEventListener('resize', this.drawChart);
     }
 
 
@@ -39,10 +42,38 @@ class Chart extends React.Component {
         let circleRadius = 0.15 * width;
         let rectSide = 0.15 * width;
 
+        // We are defining a width and height of the chart and copying those values as the third and forth arguments
+        // of the viewBox SVG attribute.
+        //
+        // The All SVG content is drawn inside SVG viewports. Every SVG viewport defines a drawing region characterized
+        // by a size (width, height), and an origin, measured in abstract user units.
+        // Each SVG viewport generates a viewport coordinate system and a user coordinate system, initially identical.
+        // Providing a ‘viewBox’ on a viewport's element transforms the user coordinate system relative to the
+        // viewport coordinate system as described in The ‘viewBox’ attribute.
+        //
+        // The ‘viewBox’ attribute, in conjunction with the ‘preserveAspectRatio’ attribute, provides the capability
+        // to stretch an SVG viewport to fit a particular container element.
+        //
+        // The attribute `preserveAspectRatio` tells how the content of the viewBox will behavior after svg resizing.
+        // It can accepts: preserveAspectRatio="{alignment keyword} {scaling keyword}"`
+        //
+        // The alignment keyword tells how is the base point to stretch/scale the svg viewBox:
+        // 	           Left	      Center	Right
+        // Top	    xMinYMin	xMidYMin	xMaxYMin
+        // Center	xMinYMid	xMidYMid	xMaxYMid
+        // Bottom	xMinYMax	xMidYMax	xMaxYMax
+        //
+        // The scaling keyword defines the behavior of the viewBox after streching/scaling
+        // meet = scale the SVG down until it fits
+        // slice = scale the SVG up until no empty space remains.
+        //
+        // We decided here to use the leftmost point of the svg to scale them.
         let svg = d3.select(this.chartContainer)
             .append("svg")
             .attr("width", width)
-            .attr("height", height);
+            .attr("height", height)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${width} ${height}`);
 
         let container = svg.append("g");
 
