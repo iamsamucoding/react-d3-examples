@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/simple-zoom-d3-react-bootstrap.iml" filepath="$PROJECT_DIR$/../simple-zoom-d3-react-bootstrap/.idea/simple-zoom-d3-react-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/simple-zoom-d3-react-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/simple-zoom-d3-react-bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/simple-zoom-d3-react-bootstrap.iml" filepath="$PROJECT_DIR$/.idea/simple-zoom-d3-react-bootstrap.iml" />
     </modules>
   </component>
 </project>

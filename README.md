@@ -10,7 +10,7 @@ npm start
 ```
 
 #### simple-zoom-d3-react-bootstrap
-A simple react app that incorporates a zoomable D3 into a bootstrap container. This example was based on three posts: [first](https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js), [second](https://www.d3-graph-gallery.com/graph/interactivity_zoom.html), and [third](http://bl.ocks.org/sgruhier/1d692762f8328a2c9957).
+A simple react app that incorporates draggable and zoomable svg elements (a circle and a rectangle) into a bootstrap container by D3. This example was based on three posts: [first](https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js), [second](https://www.d3-graph-gallery.com/graph/interactivity_zoom.html), and [third](http://bl.ocks.org/sgruhier/1d692762f8328a2c9957).
 
 #### simple-responsive-zoom-d3-react-bootstrap-v1
 The previous app with a first version of resizing. In this example, the `<svg>` has its surrounding container width and the `<circle>` has 20% of it.
