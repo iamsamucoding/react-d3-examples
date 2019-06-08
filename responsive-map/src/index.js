@@ -34,7 +34,8 @@ class Chart extends React.Component {
                                                           // of this specific map
 
         // probably, this map scale was obtained after many trials
-        let projection = d3.geoAlbersUsa().scale(DEFAULT_MAP_SCALE);
+        console.log('this.initial_width: ', this.initial_width);
+        let projection = d3.geoAlbersUsa().scale(this.initial_width);
         let path = d3.geoPath().projection(projection);
 
         let svg = d3.select(this.chartContainer)
@@ -58,13 +59,11 @@ class Chart extends React.Component {
         // since the map is drawn by using fixed points associated with the initial svg viewport,
         // one option is simply to provide a `scale transform` in the canvas/component <g>
         // without changing its width and height
-        if (this.chartContainer.clientWidth !== this.initial_width) {
-            let scale = this.chartContainer.clientWidth / this.initial_width;
-            let svg = d3.select(this.chartContainer).select("svg");
-            let g = svg.select("g");
+        let scale = this.chartContainer.clientWidth / this.initial_width;
+        let svg = d3.select(this.chartContainer).select("svg");
+        let g = svg.select("g");
 
-            g.attr("transform",`scale(${scale})`);
-        }
+        g.attr("transform",`scale(${scale})`);
     }
 
 
