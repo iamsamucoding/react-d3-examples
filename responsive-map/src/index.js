@@ -12,7 +12,10 @@ import * as topojson from "topojson";
 import "./index.css";
 
 
-// Example based on: http://bl.ocks.org/jczaplew/4444770
+// Example based on:
+// http://bl.ocks.org/jczaplew/4444770
+// https://webdesign.tutsplus.com/tutorials/svg-viewport-and-viewbox-for-beginners--cms-30844
+// https://codepen.io/tigt/post/why-and-how-preserveaspectratio
 
 const DEFAULT_WIDTH = 900;
 
