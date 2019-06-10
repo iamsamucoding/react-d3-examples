@@ -21,31 +21,35 @@ class Chart extends React.Component {
     constructor(props) {
         super(props);
 
-        this.initial_width = 0;
-        this.initial_height = 0;
+        this.width = 0;
+        this.height = 0;
 
         this.updateSizes = this.updateSizes.bind(this);
     }
 
 
     componentDidMount() {
-        this.initial_width = (this.chartContainer.clientWidth) ? this.chartContainer.clientWidth : DEFAULT_WIDTH;
-        this.initial_height = this.initial_width * 0.618; // some logic propsed by the author which seems to be based on the size
-                                                          // of this specific map
+        this.width = (this.chartContainer.clientWidth) ? this.chartContainer.clientWidth : DEFAULT_WIDTH;
+        this.height = this.width * 0.618; // some logic propsed by the author which seems to be based on the size
+                                          // of this specific map
 
         // probably, this map scale was obtained after many trials
-        console.log('this.initial_width: ', this.initial_width);
-        let projection = d3.geoAlbersUsa().scale(this.initial_width);
+        let projection = d3.geoAlbersUsa()
+                           .scale(this.width)
+                           .translate([this.width / 2, this.height / 2]);
         let path = d3.geoPath().projection(projection);
 
         let svg = d3.select(this.chartContainer)
             .append("svg")
-            .attr("width", this.initial_width)
-            .attr("height", this.initial_height)
-            .append("g");
+            .attr("width", this.width)
+            .attr("height", this.height)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${this.width} ${this.height}`);
+
+        let g = svg.append("g");
 
         let us = require("./us-states.json");
-        svg.selectAll(".states")
+        g.selectAll(".states")
             .data(topojson.feature(us, us.objects.states).features)
             .enter().append("path")
             .attr("class", "states")
@@ -59,11 +63,12 @@ class Chart extends React.Component {
         // since the map is drawn by using fixed points associated with the initial svg viewport,
         // one option is simply to provide a `scale transform` in the canvas/component <g>
         // without changing its width and height
-        let scale = this.chartContainer.clientWidth / this.initial_width;
+        let width = this.chartContainer.clientWidth;
+        let height = width * 0.618;
         let svg = d3.select(this.chartContainer).select("svg");
+        svg.attr("width", width)
+           .attr("height", height);
         let g = svg.select("g");
-
-        g.attr("transform",`scale(${scale})`);
     }
 
 
@@ -72,7 +77,9 @@ class Chart extends React.Component {
             <Container>
                 <Row>
                     <Col xs={12}>
-                        <div id="my-container" ref={divEl => this.chartContainer = divEl}>
+                        <div id="my-container"
+                             className={"d-flex justify-content-center align-items-center"}
+                             ref={divEl => this.chartContainer = divEl}>
                         </div>
                     </Col>
                 </Row>
