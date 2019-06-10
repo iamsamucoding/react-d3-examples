@@ -1,0 +1,10 @@
+.states {
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: 0.75px;
+}
+
+#my-container {
+  border:2px solid #d0d0d0;
+  border-radius: 5px;
+}

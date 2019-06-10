@@ -45,7 +45,8 @@ Consequently, the `<circle>` and `<rect>` are redrawn according to this new widt
 
 This example was based on [this post](https://chartio.com/resources/tutorials/how-to-resize-an-svg-when-the-window-is-resized-in-d3-js/) and [this another one](https://codepen.io/tigt/post/why-and-how-preserveaspectratio).
 
-
 ### 6. responsive-map
-Example of a responsive map by using D3. When resizing the window horizontally, the map is scaled accordingly. This example was based on [this post](http://bl.ocks.org/jczaplew/4444770).
+Example of a responsive map by using D3. When resizing the window horizontally, the map is scaled accordingly. This example was based on [this post](http://bl.ocks.org/jczaplew/4444770). For more contents about SGV and viewPort, viewBox, you should check these links: [first](https://webdesign.tutsplus.com/tutorials/svg-viewport-and-viewbox-for-beginners--cms-30844) and [second](https://codepen.io/tigt/post/why-and-how-preserveaspectratio).
 
+### 7. responsive-zoomable-map
+The previous react app but with zoomable and draggable.
