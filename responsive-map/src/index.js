@@ -15,36 +15,31 @@ import "./index.css";
 // Example based on: http://bl.ocks.org/jczaplew/4444770
 
 const DEFAULT_WIDTH = 900;
-const DEFAULT_MAP_SCALE = 1100;
 
 class Chart extends React.Component {
     constructor(props) {
         super(props);
-
-        this.width = 0;
-        this.height = 0;
-
         this.updateSizes = this.updateSizes.bind(this);
     }
 
 
     componentDidMount() {
-        this.width = (this.chartContainer.clientWidth) ? this.chartContainer.clientWidth : DEFAULT_WIDTH;
-        this.height = this.width * 0.618; // some logic propsed by the author which seems to be based on the size
-                                          // of this specific map
+        let width = (this.chartContainer.clientWidth) ? this.chartContainer.clientWidth : DEFAULT_WIDTH;
+        let height = width * 0.618; // some logic propsed by the author which seems to be based on the size
+                                    // of this specific map
 
         // probably, this map scale was obtained after many trials
         let projection = d3.geoAlbersUsa()
-                           .scale(this.width)
-                           .translate([this.width / 2, this.height / 2]);
+                           .scale(width)
+                           .translate([width / 2, height / 2]);
         let path = d3.geoPath().projection(projection);
 
         let svg = d3.select(this.chartContainer)
             .append("svg")
-            .attr("width", this.width)
-            .attr("height", this.height)
+            .attr("width", width)
+            .attr("height", height)
             .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", `0 0 ${this.width} ${this.height}`);
+            .attr("viewBox", `0 0 ${width} ${height}`);
 
         let g = svg.append("g");
 
@@ -68,7 +63,6 @@ class Chart extends React.Component {
         let svg = d3.select(this.chartContainer).select("svg");
         svg.attr("width", width)
            .attr("height", height);
-        let g = svg.select("g");
     }
 
 
@@ -77,9 +71,7 @@ class Chart extends React.Component {
             <Container>
                 <Row>
                     <Col xs={12}>
-                        <div id="my-container"
-                             className={"d-flex justify-content-center align-items-center"}
-                             ref={divEl => this.chartContainer = divEl}>
+                        <div id="my-container" ref={divEl => this.chartContainer = divEl}>
                         </div>
                     </Col>
                 </Row>
