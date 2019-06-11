@@ -34,7 +34,7 @@ class Chart extends React.Component {
 
     drawChart() {
         // to avoid multiple appends of <svg> into the char container, we must remove it
-        d3.select(this.chartContainer).selectAll("svg").remove();
+        // d3.select(this.chartContainer).selectAll("svg").remove();
 
         let height = 600;
 
@@ -105,6 +105,9 @@ class Chart extends React.Component {
         svg.call(d3.zoom().on("zoom", () => {
             container.attr("transform", d3.event.transform);
         }));
+
+        // to avoid multiple appends of <svg> into the char container, we must remove it
+        svg.exit().remove();
     }
 
 
