@@ -50,3 +50,6 @@ Example of a responsive map by using D3. When resizing the window horizontally, 
 
 ### 7. responsive-zoomable-map
 The previous react app but with zoomable and draggable.
+
+### 8. responsive-zoomable-map-with-zoom-to-bounding-box
+
